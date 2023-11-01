@@ -14,6 +14,7 @@ body {
 .container {
   display: flex;
 }
+
 .sidebar {
   position: relative;
   display: flex;
