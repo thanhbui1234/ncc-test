@@ -1,0 +1,145 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto";
+  font-size: 22px;
+}
+.container {
+  display: flex;
+}
+.sidebar {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 1000px;
+  background-color: #191718;
+}
+.sidebar ul {
+  padding: 50px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  color: white;
+  list-style-type: none;
+}
+.sidebar ul li {
+  cursor: pointer;
+}
+ul li:hover {
+  color: red;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 300px;
+  margin-bottom: 80px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.about-content {
+  background-color: #efefef;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  padding: 30px 270px;
+}
+.content-new {
+  font-size: 20px;
+}
+.content-child {
+  display: flex;
+  gap: 5px;
+  height: 160px;
+}
+.content-child img {
+  width: 100px;
+  height: 100px;
+}
+.content-child p {
+  font-size: 17px;
+}
+.p-content {
+  font-size: 17px;
+}
+.footer {
+  /* position: absolute;
+  bottom: -40px;
+  left: 300px; */
+}
+@media only screen and (max-width: 1700px) {
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .about-content p {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .main-content {
+    padding-right: 350px;
+  }
+
+  .about-content p {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .imgLogo {
+    padding-left: 320px;
+  }
+  .news {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main-content {
+    display: block;
+  }
+  .about-content {
+    width: 300px;
+  }
+  .content-new {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .sidebar {
+    display: none;
+  }
+  .imgLogo {
+    padding-top: 30px;
+    padding-left: 240px;
+  }
+}
